@@ -6,8 +6,24 @@ export const eventType = defineType({
   type: 'document',
   fields: [
     defineField({
-      name: 'name',
-      type: 'string',
-    }),
+        name: 'Nome',
+        type: 'string',
+      }),
+      defineField({
+          name: 'Sobrenome',
+          type: 'string',
+      }),
+      defineField({
+          name: 'Idade',
+          type: 'number',
+      }),
+      defineField({
+          name: 'DataDeNascimento',
+          type: 'datetime',
+      }),
+      defineField({
+        name: 'ReceberPromocoes',
+        type: 'boolean',
+      }),
   ],
 })
